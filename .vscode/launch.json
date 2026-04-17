@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/GitHub/Intro-Programacao-C/Intro-Programacao-C/Segunda-lista-de-exercicios",
-      "program": "c:/GitHub/Intro-Programacao-C/Intro-Programacao-C/Segunda-lista-de-exercicios/build/Debug/outDebug",
+      "cwd": "c:/GitHub/Intro-Programacao-C/Intro-Programacao-C/.vscode",
+      "program": "c:/GitHub/Intro-Programacao-C/Intro-Programacao-C/.vscode/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
