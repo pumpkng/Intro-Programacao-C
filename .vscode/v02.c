@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-#include <time.h>
 int main(){
     int A[128], K;
     bool achei=false;
