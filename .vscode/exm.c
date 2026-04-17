@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#define M 30
-#define N 40
+#define M 3
+#define N 4
 
 int main(){
     int m[M][N],v[N],a2=0;
