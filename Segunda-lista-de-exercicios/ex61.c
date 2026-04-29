@@ -1,13 +1,12 @@
 #include <stdio.h>
 int main(){
-    float c,c1,n,media;
-    c=0;
-    for(c=0;c<10;c++){
-        printf("Insira um valor: ");
+    float a,n,media;
+    for(int i=0;i<10;i++){
+        printf("Insira o %do valor: ",i+1);
         scanf("%f",&n);
-        c1+=n;
+        a+=n;
     }
-    media = c1/c;
-    printf("A média aritmética dos números é igual a %.2f.",media);
+    media=a/10;
+    printf("\nA média aritmética dos números é igual a %.2f.",media);
     return 0;
 }

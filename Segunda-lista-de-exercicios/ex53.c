@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main(){
-    float n;
+    int n;
     printf("Insira um número: ");
-    scanf("%f",&n);
+    scanf("%d",&n);
     do{
-        printf("%.0f ",n);
+        printf("%d ",n);
         n--;
     }while(n>=1);
     return 0;

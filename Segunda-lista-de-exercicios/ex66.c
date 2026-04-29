@@ -1,25 +1,22 @@
 #include <stdio.h>
 int main(){
-    int c, c1, c2, n1, n2;
-    c2=0;
+    int a=0, n1, n2;
     printf("Insira o primeiro número: ");
-    scanf("%i",&n1);
-    printf("Insira o segundo número: ");
-    scanf("%i",&n2);
+    scanf("%d",&n1);
+    printf("\nInsira o segundo número: ");
+    scanf("%d",&n2);
     if(n2<=n1){
-        c1=n2;
-        for(c=0;c<n1;c++){
-            c2+=c1;
-            c1++;
+        for(int i=0;i<n1;i++){
+            a+=n2;
+            n2++;
         }
     }
     else{
-        c1=n1;
-        for(c=0;c<n2;c++){
-            c2+=c1;
-            c1++;
+        for(int i=0;i<n2;i++){
+            a+=n1;
+            n1++;
         }
     }    
-    printf("A soma dos números entre os dois inteiros é igual a %i.",c2);
+    printf("\nA soma dos números entre os dois inteiros é igual a %d.",a);
     return 0;
 }

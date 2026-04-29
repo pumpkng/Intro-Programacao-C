@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(){
     int Q[20],menor=-1,posicao=0,c=0;
+
     for(int i=0;i<20;i++){
         printf("\nInsira um número: ");
         scanf("%d",&Q[i]);
@@ -17,6 +18,7 @@ int main(){
         printf("\nO menor até agora é %d.",menor);
         c++;
     }
+    
     printf("\nO menor número do vetor é %d. Sua posição é %d. %d números foram inseridos.",menor,posicao,c);
     return 0;
 }

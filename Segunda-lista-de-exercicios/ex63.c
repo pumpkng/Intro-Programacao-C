@@ -1,12 +1,11 @@
 #include <stdio.h>
 int main(){
-    float c,c1,n;
-    c1=0;
-    for(c=0;c<10;c++){
-        printf("Insira um número: ");
-        scanf("%f",&n);
-        c1+=n;
+    int a=0,n;
+    for(int i=0;i<10;i++){
+        printf("Insira o %do número: ",i+1);
+        scanf("%d",&n);
+        a+=n;
     }
-    printf("A soma de todos os números é igual a %.0f.",c1);
+    printf("A soma de todos os números é igual a %d.",a);
     return 0;
 }

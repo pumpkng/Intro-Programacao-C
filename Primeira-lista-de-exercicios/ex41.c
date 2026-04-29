@@ -3,13 +3,13 @@ int main(){
     float n1, n2;
     printf("Insira o primeiro número: ");
     scanf("%f",&n1);
-    printf("Insira o segundo número: ");
+    printf("\nInsira o segundo número: ");
     scanf("%f",&n2);
     if(n1==n2)
-    printf("Números iguais");
+    printf("\nNúmeros iguais");
     if(n1>n2)
-    printf("Primeiro é maior");
+    printf("\nPrimeiro é maior");
     if(n1<n2)
-    printf("Segundo é maior");
-    return 1;
+    printf("\nSegundo é maior");
+    return 0;
 }

@@ -3,9 +3,9 @@ int main(){
     float n1,n2,n3;
     printf("Insira o primeiro valor: ");
     scanf("%f",&n1);
-    printf("Insira o segundo valor: ");
+    printf("\nInsira o segundo valor: ");
     scanf("%f",&n2);
-    printf("Insira o terceiro valor: ");
+    printf("\nInsira o terceiro valor: ");
     scanf("%f",&n3);
     if(n1>n2){
         if(n1>n3){
@@ -27,5 +27,5 @@ int main(){
         else
         printf("%.2f, %.2f, %.2f",n3,n2,n1);
     }
-    return 1;
+    return 0;
 }

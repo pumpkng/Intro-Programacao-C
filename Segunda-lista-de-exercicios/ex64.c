@@ -1,14 +1,13 @@
 #include <stdio.h>
 int main(){
-    float c, c1, n;
-    c1=0;
-    for(c=0;c<10;c++){
-        printf("Insira um número: ");
-        scanf("%f",&n);
+    int a=0,n;
+    for(int i=0;i<10;i++){
+        printf("Insira um número: \n");
+        scanf("%d",&n);
         if(n<40){
-            c1+=n;
+            a+=n;
         }
     } 
-    printf("A soma dos números menores que 40 é igual a %.0f.",c1);
+    printf("A soma dos números menores que 40 é igual a %d.",a);
     return 0;
 }

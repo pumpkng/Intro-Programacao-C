@@ -2,14 +2,14 @@
 int main(){
     float n1, n2, media;
     do{
-        printf("Insira a primeira nota: ");
+        printf("Insira a primeira nota: \n");
         scanf("%f",&n1);
     }while(n1<0||n1>10);
     do{
-        printf("Insira a segunda nota: ");
+        printf("Insira a segunda nota: \n");
         scanf("%f",&n2);
     }while(n2<0||n2>10);
-    media = (n1+n2)/2;
+    media=(n1+n2)/2;
     printf("A média das notas é igual a %.1f.",media);
-    return 1;
+    return 0;
 }

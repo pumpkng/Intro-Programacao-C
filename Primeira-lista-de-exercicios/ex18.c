@@ -1,14 +1,15 @@
 #include <stdio.h>
 int main(){
-    float n, A, Pl, l, c;
+    float A, Pl, l, c;
+    int n;
     printf("Insira a potência de uma lâmpada em watts: ");
     scanf("%f",&Pl);
-    printf("Insira a largura do quarto em metros: ");
+    printf("\nInsira a largura do quarto em metros: ");
     scanf("%f",&l);
-    printf("Insira o comprimento do quarto em metros: ");
+    printf("\nInsira o comprimento do quarto em metros: ");
     scanf("%f",&c);
-    A = l*c;
-    n = (18*A/Pl)+1;
-    printf("O número necessário de lâmpadas é %.0f.",n);
-    return 1;
+    A=l*c;
+    n=(18*A/Pl)+1;
+    printf("\n%d lâmpadas são necessárias.",n);
+    return 0;
 }

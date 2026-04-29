@@ -1,10 +1,8 @@
 #include <stdio.h>
 int main(){
-    float c, numero;
-    numero = 10;
-    c=1;
+    int c=1, numero=10;
     while(c<=10){
-        printf("%.0f ",numero);
+        printf("%d ",numero);
         numero--;
         c++;
     }

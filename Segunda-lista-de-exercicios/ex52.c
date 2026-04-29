@@ -1,9 +1,8 @@
 #include <stdio.h>
 int main(){
-    float numero;
-    numero = 101;
+    int numero=101;
     do{
-        printf("%.0f ",numero);
+        printf("%d ",numero);
         numero++;
     }while(numero<=110);
     return 0;
