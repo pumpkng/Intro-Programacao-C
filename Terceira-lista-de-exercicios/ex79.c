@@ -3,7 +3,7 @@ int main(){
     int V[20],a=0,media,c=0;
 
     for(int i=0;i<20;i++){
-        printf("Insira a nota do aluno %d: ",i+1);
+        printf("Insira a nota do %do aluno: ",i+1);
         scanf("%d",&V[i]);
         a+=V[i];
     }

@@ -1,20 +1,45 @@
 #include <stdio.h>
-#define M 20
-int main(){
-    int VET[M];
+#include <stdlib.h>
+#include <time.h>
 
+#define M 20
+
+int main(){
+    int v[M], repetidos[M], cont=0, repetido=0;
+
+    srand(time(NULL));
+    printf("V: ");
     for(int i=0;i<M;i++){
-        printf("Insira o %do numero do vetor: \n",i+1);
-        scanf("%d",&VET[i]);
+        v[i] = rand()%10;
+        printf("%d, ",v[i]);
     }
 
-    for(int i=0;i<M;i++){    
+    for(int i=0;i<M;i++){
         for(int j=0;j<M;j++){
-            if(VET[i]==VET[j]&&i!=j){
-                printf("Número %d igual encontrado nas posições %d e %d.\n",VET[i],i,j);
+            if(v[i]==v[j] && i!=j){
+                if(j<i)
+                    break;
+                repetido = 1;
+            }
+        }
+        if(repetido==1){
+            repetidos[cont]=v[i];
+            cont++;
+        }
+        repetido = 0;
+    }
+
+    printf("\nRepetidos: ");
+    for(int i=0;i<cont;i++){
+        printf("%d, ",repetidos[i]);
+    }
+
+    for(int i=0;i<cont;i++){
+        printf("\nValor %d: ",repetidos[i]);
+        for(int j=0;j<M;j++){
+            if(repetidos[i]==v[j]){
+                printf("%d, ",j);
             }
         }
     }
-    
-    return 0;
 }
