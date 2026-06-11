@@ -4,7 +4,6 @@
 #include <windows.h>
 
 int palindromo(char[]);
-void corrige(char[]);
 
 int main(){
     SetConsoleOutputCP(65001);
@@ -14,8 +13,6 @@ int main(){
     fgets(texto,sizeof(texto),stdin);
     texto[strlen(texto)-1] = '\0';
 
-    corrige(texto);
-    
     if(palindromo(texto))
         printf("É palíndromo!");
     else

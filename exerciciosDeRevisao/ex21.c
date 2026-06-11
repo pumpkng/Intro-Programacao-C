@@ -89,9 +89,11 @@ int main(){
                 printf("\n");
             }
             break;
+
         default:
             printf("\nOpção inválida!");
             break;
     }
+    
     return 0;
 }   
