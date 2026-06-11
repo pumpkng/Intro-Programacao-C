@@ -9,12 +9,18 @@ int main(){
     scanf("%d",&n);
 
     printf("\nFatorial: %d",fatorial(n));
+
+    return 0;
 }
 
 int fatorial(int n){
-    int resultado = 1;
-    for(int i=n;i>0;i--){
-        resultado*=i;
+    int fat;
+
+    if(n == 0){
+        return 1;
     }
-    return resultado;
+
+    fat = n * fatorial(n-1);
+
+    return fat;
 }
