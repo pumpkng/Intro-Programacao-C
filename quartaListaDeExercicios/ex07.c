@@ -23,14 +23,7 @@ int main(){
 }
 
 void corrige(char texto[]){
-    for(int i=0;i<strlen(texto)-1;i++){
-        if(texto[i] >= 'A' && texto[i] <= 'Z'){
-            texto[i]+=32;
-        }
-        if(texto[i] >= 'a' && texto[i] <= 'z'){
-            
-        }
-    }
+
 }
 int palindromo(char texto[]){
     for(int i=0;i<strlen(texto)/2;i++){
