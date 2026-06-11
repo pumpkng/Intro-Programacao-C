@@ -19,9 +19,6 @@ int main(){
         printf("Não é palíndromo!");
 }
 
-void corrige(char texto[]){
-
-}
 int palindromo(char texto[]){
     for(int i=0;i<strlen(texto)/2;i++){
         if(texto[i]!=texto[strlen(texto)-1-i]){
