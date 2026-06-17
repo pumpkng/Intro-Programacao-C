@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int somaCubos(int);
 
@@ -14,13 +15,9 @@ int main(){
 }
 
 int somaCubos(int n){
-    int sC;
-
     if(n == 1){
         return 1;
     }
 
-    sC = n*n*n + somaCubos(n-1);
-
-    return sC;
+    return pow(n,3) + somaCubos(n-1);
 }

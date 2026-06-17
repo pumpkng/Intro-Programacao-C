@@ -3,7 +3,6 @@
 int menor(int);
 
 int main(){
-
     int n;
 
     printf("\nN: ");
@@ -12,11 +11,9 @@ int main(){
     printf("\nMenor quadrado: %d",menor(n));
 
     return 0;
-
 }
 
 int menor(int n){
-    
     int m = 0;
 
     for(int i=0;i<=n+1;i++){
@@ -27,5 +24,4 @@ int menor(int n){
     }
 
     return 0;
-    
 }

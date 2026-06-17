@@ -14,13 +14,9 @@ int main(){
 }
 
 int fatorial(int n){
-    int fat;
-
-    if(n == 0){
+    if(n == 0 || n == 1){
         return 1;
     }
 
-    fat = n * fatorial(n-1);
-
-    return fat;
+    return n * fatorial(n-1);
 }

@@ -3,7 +3,6 @@
 void fibonacci(int);
 
 int main(){
-    
     int fim;
 
     printf("\nFim: ");
@@ -13,11 +12,9 @@ int main(){
     fibonacci(fim);
 
     return 0;
-
 }
 
 void fibonacci(int fim){
-
     int n1 = 0, n2 = 1;
 
     while(n1<fim){

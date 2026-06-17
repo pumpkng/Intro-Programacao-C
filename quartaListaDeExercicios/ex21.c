@@ -5,20 +5,18 @@
 int triangulo(int, int, int);
 
 int main(){
-
     SetConsoleOutputCP(65001);
-    
     int n1, n2, n3;
 
     do{
-    printf("\nN1: ");
-    scanf("%d",&n1);
+        printf("\nN1: ");
+        scanf("%d",&n1);
 
-    printf("\nN2: ");
-    scanf("%d",&n2);
+        printf("\nN2: ");
+        scanf("%d",&n2);
 
-    printf("\nN3: ");
-    scanf("%d",&n3);
+        printf("\nN3: ");
+        scanf("%d",&n3);
     }while(n1 <= 0 || n2 <= 0 || n3 <= 0);
     
     switch (triangulo(n1, n2, n3)){
@@ -50,7 +48,6 @@ int main(){
     }
 
     return 0;
-
 }
 
 int triangulo(int n1, int n2, int n3){
@@ -66,5 +63,4 @@ int triangulo(int n1, int n2, int n3){
 
     else
         return 3;
-    
 }

@@ -14,13 +14,9 @@ int main(){
 }
 
 int soma(int n){
-    int s;
-
     if(n == 0){
         return 0;
     }
 
-    s = n + soma(n-1);
-
-    return s;
+    return n + soma(n-1);
 }

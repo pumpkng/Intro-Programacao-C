@@ -7,11 +7,11 @@ int main(){
     int x, y;
 
     do{
-    printf("\nX: ");
-    scanf("%d",&x);
+        printf("\nX: ");
+        scanf("%d",&x);
 
-    printf("\nY: ");
-    scanf("%d",&y);
+        printf("\nY: ");
+        scanf("%d",&y);
     }while(x >= y);
 
     printf("\n");

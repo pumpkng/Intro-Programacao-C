@@ -5,7 +5,6 @@ int fatorial(int);
 int combinacao(int,int);
 
 int main(){
-
     int n, r;
 
     printf("\nN: ");
@@ -20,7 +19,6 @@ int main(){
 }
 
 int fatorial(int n){
-    
     int fat = 1;
     
     for(int i=n;i>0;i--){
@@ -28,13 +26,10 @@ int fatorial(int n){
     }
 
     return fat;
-
 }
 
 int combinacao(int n, int r){
-
     int combinacao = fatorial(n)/(fatorial(r)*fatorial(n-r));
 
     return combinacao;
-
 }
