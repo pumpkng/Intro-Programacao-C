@@ -15,11 +15,13 @@ void imprimeTurma(Aluno[], int);
 void imprimeAluno(Aluno[], int);
 void removeAluno(Aluno[], int, int);
 int buscaAluno(Aluno[], int, int);
+float calculaMedia(Aluno[], int);
+float calculaMediaTurma(Aluno[], int);
 
 int main(){
     SetConsoleOutputCP(65001);
     Aluno turma[50];
-    int n = 0, op, RA;
+    int n = 0, op, RA, pos;
     
     do{
         imprimeMenu();
@@ -27,7 +29,7 @@ int main(){
         
         switch(op){
             case 1:
-                if(n == 50){
+                if(n >= 50){
                     printf("\n\nTurma cheia!\n\n");
                 }
                 else{
@@ -56,12 +58,14 @@ int main(){
             case 3:
                 printf("\n\nRA: ");
                 scanf("%d",&RA);
+                
+                pos = buscaAluno(turma, n, RA);
 
-                if(buscaAluno(turma, n, RA) == -1){
+                if( pos == -1){
                     printf("\nAluno não encontrado!\n\n");
                 }
                 else{
-                    imprimeAluno(turma, buscaAluno(turma, n, RA));
+                    imprimeAluno(turma, pos);
                 }
                 break;
 
@@ -73,11 +77,13 @@ int main(){
                     printf("\n\nRA: ");
                     scanf("%d",&RA);
 
-                    if(buscaAluno(turma, n, RA) == -1){
+                    pos = buscaAluno(turma, n, RA);
+
+                    if(pos == -1){
                         printf("\n\nAluno não existe!\n\n");
                     }
                     else{
-                        removeAluno(turma, n, buscaAluno(turma, n, RA));
+                        removeAluno(turma, n, pos);
                         n--;
                     }
                 }
@@ -90,17 +96,42 @@ int main(){
                 else{
                     printf("\nRA: ");
                     scanf("%d",&RA);
+                    
+                    pos = buscaAluno(turma, n, RA);
 
-                    if(buscaAluno(turma, n, RA) == -1){
+                    if(pos == -1){
                         printf("\n\nAluno não existe!\n\n");
                     }
                     else{
-                        insereAluno(turma, n, RA);
+                        insereAluno(turma, pos, RA);
                     }
                 }
                 break;
 
             case 6:
+                if(n == 0){
+                    printf("\n\nTurma vazia!\n\n");                    
+                }
+                else{
+                    printf("\nRA: ");
+                    scanf("%d",&RA);
+
+                    pos = buscaAluno(turma, n, RA);
+
+                    printf("\n\nMédia do aluno %s: %.1f\n\n", turma[pos].nome, calculaMedia(turma, pos));
+                }
+                break;
+            
+            case 7: 
+                if(n == 0){
+                    printf("\n\nTurma vazia!\n\n");                    
+                }
+                else{
+                    printf("\n\nMédia da turma: %.1f\n\n", calculaMediaTurma(turma, n));
+                }            
+                break;
+            
+            case 8:
                 printf("\n\nTchau!\n\n");
                 break;
             
@@ -108,8 +139,8 @@ int main(){
                 printf("\n\nOpção Inválida!\n\n");
                 break;
         }
-    }while(op != 6);
-
+    }while(op != 8);
+    
     return 0;
 }
 
@@ -120,7 +151,9 @@ void imprimeMenu(){
    printf("\n3 - Consultar aluno");
    printf("\n4 - Remover aluno");
    printf("\n5 - Alterar dados do aluno");
-   printf("\n6 - Finalizar");
+   printf("\n6 - Calcular média do aluno");
+   printf("\n7 - Calcular média da turma");
+   printf("\n8 - Finalizar");
    printf("\nOpção: ");
 }
 
@@ -187,4 +220,22 @@ int buscaAluno(Aluno turma[], int n, int RA){
     }
 
     return -1;
+}
+
+float calculaMedia(Aluno turma[], int pos){
+    float soma = 0;
+    for(int i=0;i<3;i++){
+        soma += turma[pos].nota[i];
+    }
+    soma /= 3;
+    return soma;
+}
+
+float calculaMediaTurma(Aluno turma[], int n){
+    float soma = 0;
+    for(int i=0;i<n;i++){
+        soma =+ calculaMedia(turma, i);
+    }
+    soma /= n;
+    return soma;
 }
