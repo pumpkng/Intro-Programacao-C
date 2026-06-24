@@ -6,7 +6,7 @@ int main(){
     int n;
 
     printf("\nN: ");
-    scanf("%d",&n);
+    scanf("%d", &n);
 
     numeros(n);
 
@@ -16,10 +16,10 @@ int main(){
 void numeros(int n){
     
     if(n == 0){
-        printf(" %d",0);
+        printf("%d ", 0);
     }
     else{
-        printf(" %d",n);
+        printf("%d ", n);
         numeros(n-1);
     }
 

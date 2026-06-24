@@ -7,10 +7,11 @@ int main(){
 
     for(int i=0;i<10;i++){
         printf("\nv[%d]: ", i);
-        scanf("%d",&v[i]);
+        scanf("%d", &v[i]);
     }
 
     inverteVetor(v, 10);
+    
     printf("\nVetor invertido: \n");
 
     for(int i=0;i<10;i++){

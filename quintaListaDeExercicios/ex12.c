@@ -6,11 +6,11 @@ int main(){
     int v[10];
 
     for(int i=0;i<10;i++){
-        printf("\nv[%d]: ",i);
-        scanf("%d",&v[i]);
+        printf("\nv[%d]: ", i);
+        scanf("%d", &v[i]);
     }
 
-    printf("\nMenor elemento: %d", menorElemento(v,10));
+    printf("\nMenor elemento: %d", menorElemento(v, 10));
 
     return 0;
 }

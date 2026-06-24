@@ -6,19 +6,19 @@ int main(){
     int n;
 
     printf("\nN: ");
-    scanf("%d",&n);
-
+    scanf("%d", &n);   
     numeros(n);
 
     return 0;
 }
 
 void numeros(int n){
+    
     if(n == 0){
-        printf(" %d",0);
+        printf("%d ", 0);
     }
     else{
         numeros(n-1);
-        printf(" %d",n);
+        printf("%d ", n);
     }
 }

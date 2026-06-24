@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/GitHub/Intro-Programacao-C/Intro-Programacao-C/setimaListaDeExercicios",
-      "program": "c:/GitHub/Intro-Programacao-C/Intro-Programacao-C/setimaListaDeExercicios/build/Debug/outDebug",
+      "cwd": "c:/GitHub/Intro-Programacao-C/Intro-Programacao-C/funcoesRevisao",
+      "program": "c:/GitHub/Intro-Programacao-C/Intro-Programacao-C/funcoesRevisao/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

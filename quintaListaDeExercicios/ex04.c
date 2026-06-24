@@ -5,18 +5,19 @@ int pot(int, int);
 int main(){
     int k, n;
 
-    printf("\nk: ");
+    printf("\nNumero: ");
     scanf("%d",&k);
 
-    printf("\nn: ");
+    printf("\nExpoente: ");
     scanf("%d",&n);
 
-    printf("\nPotencia: %d", pot(k,n));
+    printf("\nPotencia: %d", pot(k, n));
 
     return 0;
 }
 
 int pot(int k, int n){
+    
     if(n == 1){
         return k;
     }
@@ -25,5 +26,5 @@ int pot(int k, int n){
         return 1;
     }
     
-    return pot(k,n-1) * k; 
+    return k * pot(k, n-1); 
 }

@@ -7,7 +7,7 @@ int main(){
 
     do{
         printf("\nNumero par: ");
-        scanf("%d",&n);
+        scanf("%d", &n);
     }while(n % 2 != 0);
 
     numeros(n);
@@ -18,10 +18,10 @@ int main(){
 void numeros(int n){
     
     if(n == 0){
-        printf(" %d",0);
+        printf("%d", 0);
     }
     else{
-        printf(" %d",n);
-        numeros(n-2);
+        printf("%d", n);
+        numeros(n - 2);
     }
 }

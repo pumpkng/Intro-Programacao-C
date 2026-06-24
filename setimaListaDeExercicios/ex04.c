@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void troca(int*, int*);
 
@@ -12,6 +13,7 @@ int main(){
     scanf("%d",&B);
     
     troca(&A, &B);
+    
     printf("\nA trocado: %d", A);
     printf("\nB trocado: %d", B);
 }

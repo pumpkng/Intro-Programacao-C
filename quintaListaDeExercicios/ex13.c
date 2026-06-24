@@ -6,13 +6,13 @@ int main(){
     int i, j, k;
 
     printf("\nInicio: ");
-    scanf("%d",&i);
+    scanf("%d", &i);
 
     printf("\nFinal: ");
-    scanf("%d",&j);
+    scanf("%d", &j);
 
     printf("\nIncremento: ");
-    scanf("%d",&k);
+    scanf("%d", &k);
 
     printf("\nSoma da serie: %d", somaSerie(i, j, k));
 
@@ -22,7 +22,7 @@ int main(){
 int somaSerie(int i, int j, int k){
 
     if(i == j){
-        return j + k;
+        return i + k;
     }
 
     return i + k + somaSerie(i+1, j, k);

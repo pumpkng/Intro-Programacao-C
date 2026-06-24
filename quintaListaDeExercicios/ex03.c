@@ -15,8 +15,8 @@ int main(){
 }
 
 int somaCubos(int n){
-    if(n == 1){
-        return 1;
+    if(n == 0){
+        return 0;
     }
 
     return pow(n,3) + somaCubos(n-1);

@@ -224,18 +224,20 @@ int buscaAluno(Aluno turma[], int n, int RA){
 
 float calculaMedia(Aluno turma[], int pos){
     float soma = 0;
+    
     for(int i=0;i<3;i++){
         soma += turma[pos].nota[i];
     }
-    soma /= 3;
-    return soma;
+
+    return soma/3;
 }
 
 float calculaMediaTurma(Aluno turma[], int n){
     float soma = 0;
+    
     for(int i=0;i<n;i++){
         soma =+ calculaMedia(turma, i);
     }
-    soma /= n;
-    return soma;
+    
+    return soma/n;
 }
