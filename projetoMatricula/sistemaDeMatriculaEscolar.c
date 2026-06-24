@@ -25,7 +25,7 @@ int main(){
     
     do{
         imprimeMenu();
-        scanf("%d",&op);
+        scanf("%d", &op);
         
         switch(op){
             case 1:
@@ -34,7 +34,7 @@ int main(){
                 }
                 else{
                     printf("\n\nRA: ");
-                    scanf("%d",&RA);
+                    scanf("%d", &RA);
                     
                     if(buscaAluno(turma, n, RA) == -1){
                         insereAluno(turma, n, RA);
@@ -57,7 +57,7 @@ int main(){
 
             case 3:
                 printf("\n\nRA: ");
-                scanf("%d",&RA);
+                scanf("%d", &RA);
                 
                 pos = buscaAluno(turma, n, RA);
 
@@ -75,7 +75,7 @@ int main(){
                 }
                 else{
                     printf("\n\nRA: ");
-                    scanf("%d",&RA);
+                    scanf("%d", &RA);
 
                     pos = buscaAluno(turma, n, RA);
 
@@ -95,7 +95,7 @@ int main(){
                 }
                 else{
                     printf("\nRA: ");
-                    scanf("%d",&RA);
+                    scanf("%d", &RA);
                     
                     pos = buscaAluno(turma, n, RA);
 
@@ -114,7 +114,7 @@ int main(){
                 }
                 else{
                     printf("\nRA: ");
-                    scanf("%d",&RA);
+                    scanf("%d", &RA);
 
                     pos = buscaAluno(turma, n, RA);
 
@@ -165,12 +165,12 @@ void insereAluno(Aluno turma[], int n, int RA){
     turma[n].nome[strlen(turma[n].nome)-1] = '\0';
 
     for(int i=0;i<3;i++){
-        printf("Nota %d: ",i+1);
-        scanf("%f",&turma[n].nota[i]);
+        printf("Nota %d: ", i+1);
+        scanf("%f", &turma[n].nota[i]);
     }
 
     printf("Frequência: ");
-    scanf("%d",&turma[n].frequencia);
+    scanf("%d", &turma[n].frequencia);
 
     turma[n].RA = RA;
 }
@@ -236,8 +236,8 @@ float calculaMediaTurma(Aluno turma[], int n){
     float soma = 0;
     
     for(int i=0;i<n;i++){
-        soma =+ calculaMedia(turma, i);
+        soma += calculaMedia(turma, i);
     }
-    
+
     return soma/n;
 }
