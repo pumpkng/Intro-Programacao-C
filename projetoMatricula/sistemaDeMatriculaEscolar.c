@@ -239,5 +239,5 @@ float calculaMediaTurma(Aluno turma[], int n){
         soma += calculaMedia(turma, i);
     }
 
-    return soma/n;
+    return soma / (float)n;
 }
